@@ -1,0 +1,34 @@
+site_name: TABOsmp wiki
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: amber
+  font:
+    text: Cinzel
+    code: JetBrains Mono
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+nav:
+  - TABO smp:
+    - Accueil: index.md
+  - Staff:
+    - Tutoriel MkDcs: useMkDocs.md
+    - Staff : Staff.md
+    - Checklist : checklist.md
+plugins:
+  - search
+  - tags
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
