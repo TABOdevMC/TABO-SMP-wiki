@@ -1,0 +1,57 @@
+site_name: TABO SMP Wiki
+site_description: The tabosmp wiki
+site_author: TABO SMP Community
+theme:
+  name: material
+  palette:
+    - scheme: light
+      toggle:
+        icon: material/toggle-light-off
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/toggle-light-on
+        name: Switch to light mode
+  font:
+    text: Cinzel
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Guides:
+    - Server Setup: guides/server-setup.md
+    - Player Guide: guides/player-guide.md
+  - Community:
+    - Rules: community/rules.md
+    - Events: community/events.md
+  - Staff:
+    - Tutoriel MkDocs: useMkDocs.md
+    - Staff: Staff.md
+    - Checklist: checklist.md
+
+plugins:
+  - search
+  - tags
+  - social
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
